@@ -71,7 +71,7 @@ Star Wars: Episode VIII;Rian Johnson;2017
 	b := bytes.NewBufferString(in)
 	m, err := ReadCSV(b)
 	if err != nil {
-		return err
+		return // err  // https://goplay.space/#-Bd9knA9BDT
 	}
 	fmt.Printf("%#v\n", m)
 	return nil
